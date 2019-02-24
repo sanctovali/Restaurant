@@ -1,20 +1,35 @@
+
 import Vapor
 
-/// Register your application's routes here.
 public func routes(_ router: Router) throws {
-    // Basic "It works" example
-    router.get { req in
-        return "It works!"
-    }
-    
-    // Basic "Hello, world!" example
-    router.get("hello") { req in
-        return "Hello, world!"
-    }
-
-    // Example of configuring a controller
-    let todoController = TodoController()
-    router.get("todos", use: todoController.index)
-    router.post("todos", use: todoController.create)
-    router.delete("todos", Todo.parameter, use: todoController.delete)
+	router.get("categories") { req -> Categories in
+		let categories = DataStruct.categories
+		
+		let cat = Categories(categories: categories)
+		return cat
+	}
+	
+	router.get("menu") { (req) -> MenuItems in
+		guard let category = req.query[String.self, at: "category"] else {
+			return MenuItems()
+		}
+		
+		let allMenuItems = MenuItems(items: DataStruct.menuItems)
+		
+		let choosenItems = allMenuItems.itemsFor(category: category)
+		let menuItems = MenuItems(items: choosenItems)
+		
+		return menuItems
+	}
+	
+	router.post("order") { req -> [String: Int] in
+		var prepTime = 0
+		
+		try req.content.decode(PrepTime.self).map { order in
+			let ids = order.menuIds
+			prepTime = 5 + (ids.count * 5)
+		}
+		
+		return ["preparation_time" : prepTime]
+	}
 }
