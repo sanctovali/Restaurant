@@ -31,7 +31,7 @@ struct MenuItems: Content {
 			MenuItem(id: 8, name: "Люля-Кебаб", description: "180/100гр", price: 350.0, category: "Блюда на углях", image_url: "kebab.jpg"),
 			MenuItem(id: 9, name: "Шаурма в пите", description: "260гр", price: 180.0, category: "Блюда на углях", image_url: "Pita_doner.jpg"),
 			MenuItem(id: 10, name: "Крылья чкмерули", description: "300гр", price: 250.0, category: "Кеци", image_url: "Chkmeruli.jpg"),
-			MenuItem(id: 11, name: "Оджахури", description: "Национальное грузинское блюдо, представляющее собой жареное мясо с картофелем. Готовится из разных видов мяса свинины, картофеля, специй, традиционно подается на кеци. На грузинском языке «оджахури» означает «семейное», это блюдо обычно готовится для всей семьи. 300гр", price: 320.0, category: "Кеци", image_url: "Ojahuri.jpg"),
+			MenuItem(id: 11, name: "Оджахури", description: "Национальное грузинское блюдо, представляющее собой жареное мясо с картофелем. Традиционно подается на кеци. 300гр", price: 320.0, category: "Кеци", image_url: "Ojahuri.jpg"),
 			MenuItem(id: 12, name: "Картофель с грибами", description: "250гр", price: 210.0 , category: "Кеци", image_url: "Potatos_mushrooms.jpg"),
 			MenuItem(id: 13, name: "Печень по-грузински", description: "Печень кинза, зёрна граната, перец чили, чеснок, базилик, красное сухое вино и семена кориандра. 220гр", price: 250.0, category: "Кеци", image_url: "Kuchmachi.jpg"),
 			MenuItem(id: 14, name: "Грибы и сыр", description: "140гр", price: 190.0, category: "Кеци", image_url: "Mushrooms_cheese.jpg"),
