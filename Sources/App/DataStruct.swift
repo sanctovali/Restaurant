@@ -16,7 +16,7 @@ struct DataStruct {
 		return [
 			MenuItem(id: 1, name: "Овощи гриль", description: "Крупно порезанные баклажаны, кабачки, перец болгарский, помидоры, картофель и репчатый лук обжариваются на раскаленной на углях решетке. 250гр", price: 210.0, category: "Гарниры", image_url: "Grilled_vegetables.jpg"),
 			MenuItem(id: 2, name: "Картофельное пюре", description: "Традиционное картофельное пюре, приготовленное на сливках и сливочном масле. 150гр", price: 320.0, category: "Гарниры", image_url: "Mashed_potatoes.jpg"),
-			MenuItem(id: 3, name: "", description: "Хрустящий картофель обжаренный в растительном фритюре. 150гр", price: 200.0, category: "Гарниры", image_url: "French_fries.jpg"),
+			MenuItem(id: 3, name: "Картофель фри", description: "Хрустящий картофель обжаренный в растительном фритюре. 150гр", price: 200.0, category: "Гарниры", image_url: "French_fries.jpg"),
 			MenuItem(id: 4, name: "Бургер Батуми", description: "290гр", price: 280.0, category: "Блюда на углях", image_url: "Batumi_burger.jpg"),
 			MenuItem(id: 5, name: "Шашлык Хрюшка", description: "180гр", price: 380.0, category: "Блюда на углях", image_url: "Pork_barbecue.jpg"),
 			MenuItem(id: 6, name: "Шашлык Курочка", description: "180гр", price: 300.0, category: "Блюда на углях", image_url: "Сhicken_barbecue.jpg"),
