@@ -8,7 +8,7 @@
 struct DataStruct {
 	static let categories = {
 		return [
-			"Гарниры", "Блюда на углях", "Кеци"
+			"Гарниры", "Блюда%20на%20углях", "Кеци"
 		]
 	}()
 	
