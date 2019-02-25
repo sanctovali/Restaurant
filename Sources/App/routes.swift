@@ -11,13 +11,13 @@ public func routes(_ router: Router) throws {
 	
 	router.get("menu") { (req) -> MenuItems in
 		guard let category = req.query[String.self, at: "category"] else {
-			return MenuItems()
+			return MenuItems(items: DataStruct.menuItems)
 		}
 		
 		let allMenuItems = MenuItems(items: DataStruct.menuItems)
 		
-		let choosenItems = allMenuItems.itemsFor(category: category)
-		let menuItems = MenuItems(items: choosenItems)
+		let selectedCategory = allMenuItems.itemsFor(category: category)
+		let menuItems = MenuItems(items: selectedCategory)
 		
 		return menuItems
 	}
